@@ -1,0 +1,357 @@
+<!DOCTYPE>
+<html><head>
+	<title>Theme Documentation</title>
+	<link rel="stylesheet" type="text/css" href="css/documentation.css">
+	<link rel="stylesheet" href="google-code-prettify/prettify.css" media="screen">
+	<script src="google-code-prettify/prettify.js"></script>
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+	<link href="css/my_style.css" rel="stylesheet">
+	<link rel='stylesheet' id='css-fancybox-css'  href="js/lightbox/source/jquery.fancybox.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="js/lightbox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/lightbox/source/jquery.fancybox.js"></script>
+	<script src="js/lightbox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="js/lightbox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+	
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	<script>document.createElement('section');var duration='500',easing='easeInQuart';</script>
+	<script src="js/script.js"></script>
+	<script>
+			$(document).ready(function(){
+					$(".fancybox").fancybox({
+			prevEffect		: 'none',
+			nextEffect		: 'none',
+			closeBtn		: false,
+			helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {}
+	}
+	});
+			});
+	</script>
+	<style>
+		/*==========CLEARFIX===================*/
+		.clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		}
+		* html .clearfix             { zoom: 1; } /* IE6 */
+		*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+		h3 { margin: 25px 0 15px; }
+	</style>
+	
+</head>
+<body>
+	<aside class="side" id="document_sidebar">
+		<div class="log_area">
+			<a href="#start"><img src="images/logo.png"></a>
+		</div>
+		<ul id="document_nav">
+			<li><a href="#start">Start</a></li>
+			<li><a href="#overview">Theme Overview</a></li>
+			<li><a href="#file">File Structure</a></li>
+			<li><a href="#home-layout">Home Page Layouts</a></li>
+			<li><a href="#shop-layout">Shop Page layout</a></li>
+			<li><a href="#blog-layout">Blog layout</a></li>
+			<li><a href="#comments-layout">Comments Layout</a></li>
+			<li><a href="#farmers-layout">Farmers Layout</a></li>
+			<li><a href="#page-layout">Page Layout</a></li>
+			<li><a href="#contact-layout">Contact Layout</a></li>
+			<li><a href="#css-str">CSS Structure</a></li>
+			<li><a href="#icon-usage">Icon Usage</a></li>
+			<li><a href="#font-usage">Font Usage</a></li>
+			<li><a href="#java">Javascript</a></li>
+			<li><a href="#source">Sources and Credits</a></li>
+		</ul>
+	</aside>
+	<section class="main-wrapper">
+		<article id="start" class="head">
+			<div class="creative_logo">
+				<img src="images/logo.png">
+				<h2><span>Veggie HTML</span> Theme</h2>
+			</div>
+			<div class="divider"></div>
+			<div class="clear">
+				<div class="grid_06"><h3>Created: 05/08/2015</h3></div>
+				<div class="grid_06">
+					<h6>By: <a href="http://0effortthemes.com/">0effortthemes.com</a></h6>
+				</div>
+			</div>
+			<p>Thank you for your purchase! If you have any questions that you feel should have been in this document, please feel free to contact us through our <a href="http://0effortthemes.com/support">Support</a>. Thanks!<br/><br/>
+			Also you'll need some knowledge of HTML, Bootstrap, CSS, jQuery to edit this theme.<br/><br/>
+		Version: 1.0</p>
+	</article>
+	
+	<!-- INSTALL THEME OPEN -->
+	<article class="theme-overview" id="overview">
+		<h2>Theme Overview</h2>
+		<hr class="notop">
+		<p>Veggie Theme is mainly a grocery oriented HTML5 template, but can also be used for other template purposes to serve as a foundation of your website/web page. It is based on Twitter Bootstrap.</p>
+		<p>To use the template you have to be a little familiar with HTML and CSS. If you are familiar with HTML and CSS and if you go through the HTML files, you will discover how easily you will be able to customize the template according to your needs. This documentation covers some basics to help you get started with the customization process.</p>
+	</article>
+	<!-- INSTALL THEME CLOSE -->
+	
+	<!-- THEME SETTINGS OPEN -->
+	<article class="file-structure" id="file">
+		<h2>File Structure</h2>
+		<hr class="notop">
+		<p>
+			When you download the Veggie theme folder you'll see something like this
+		</p>
+		<pre class="prettyprint linenums">
+			ROOT FOLDER
+			+-- fonts /
+			&brvbar;    +-- all fonts used
+			+-- images /
+			&brvbar;    +-- all images used
+			+-- php /
+			&brvbar;    +-- contact.php
+			+-- js /
+			&brvbar;    +-- main.js
+			&brvbar;    +-- main.min.js
+			&brvbar;    +-- vendor /
+			&brvbar;	+-- modernizr.js
+			&brvbar;	+-- vendor.js
+			&brvbar;	+-- vendor.min.js
+			+-- index.html
+			+-- index-2.html
+			+-- about.html
+			+-- blog.html
+			+-- blog-single.html
+			+-- comments.html
+			+-- contact.html
+			+-- farmers.html
+			+-- shop.html
+			+-- style.css
+			+-- style.min.css
+			+-- vendor.css
+			+-- vendor.min.css
+		</pre>
+	</article>
+	<!-- THEME SETTINGS CLOSE -->
+	
+	<!-- DEMO CONTENT OPEN -->
+	<article class="index-pg-layout" id="home-layout">
+		<h2>Home page Layouts</h2>
+		<p>The main layout of the Index page template can be summarized in the following snapshot.</p>
+		
+		<div class="diff">
+			<a href="screenshots/large/homepage.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/homepage.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Default Layout</span>
+			</a>
+			<a href="screenshots/large/homepage-2.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/homepage-2.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Home V2</span>
+			</a>
+		</div>
+		
+	</article>
+	<article class="index-pg-layout" id="shop-layout">
+		<h2>Shop Page layout</h2>
+		<p>The shop page layout template can be summarized in the following snapshot.</p>
+		
+		<div class="diff">
+
+			<a href="screenshots/large/shop.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/shop.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Shop Layout</span>
+			</a>
+			
+		</div>
+		<p>Lightbox plugin has been used in the images of items in Shop page for 'pop-up' effect.<br> This plugin can be used on any image on any page in this theme. For that, please use the structure show below:	</p>
+		<pre class="prettyprint linenums">
+&lt;a href="{{image path}}" class="mfp-image"  data-effect="mfp-zoom-in"&gt;
+	&lt;img src="{{image path}}" alt=""/&gt;
+&lt;/a&gt;
+<pre>
+		
+	</article>
+	<article class="index-pg-layout" id="blog-layout">
+		<h2>Blog Page  Layout</h2>
+		<p>The Blog Page layout template can be summarized in the following snapshot.</p>
+		
+		<div class="diff">
+			<a href="screenshots/large/blog.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/blog.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Blog List</span>
+			</a>
+			<a href="screenshots/large/blog-single.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/blog-single.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Blog Single Layout</span>
+			</a>
+			
+		</div>
+		
+	</article>
+	<article class="index-pg-layout" id="comments-layout">
+		<h2>Comments Layout</h2>
+		<p>The Comments layout template can be summarized in the following snapshot.</p>
+		
+		<div class="diff">
+			<a href="screenshots/large/testimonials.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/testimonials.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Comments List</span>
+			</a>
+		</div>
+		
+	</article>
+	<article class="index-pg-layout" id="farmers-layout">
+		<h2>Farmers Layout</h2>
+		<p>The Farmers layout template can be summarized in the following snapshot.</p>
+		
+		<div class="diff">
+			<a href="screenshots/large/farmers.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/farmrers.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Farmer Layout</span>
+			</a>
+		</div>
+		
+	</article>
+	<article class="index-pg-layout" id="page-layout">
+		<h2>Page Layout</h2>
+		<p>The Page layout template can be summarized in the following snapshot.</p>
+		
+		<div class="diff">
+			<a href="screenshots/large/about.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/about.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>About layout</span>
+			</a>
+		</div>
+		
+	</article>
+	<article class="index-pg-layout" id="contact-layout">
+		<h2>Contact Layout</h2>
+		<p>The Contact layout template can be summarized in the following snapshot. <br> 
+		<b>Change recieve email id, <code>$email_to_send_to = to your email id</code> in line no 15 in "contact.php" files located in php folder<b></p>
+
+		
+		<div class="diff">
+			<a href="screenshots/large/contacts.jpg" class="fancybox" data-fancybox-group="homepage">
+				<img src="screenshots/small/contact.jpg" height="400" width="400" class="img-responsive" alt="image">
+				<span>Contact Layout</span>
+			</a>
+		</div>
+		
+	</article>
+	
+	<article class="index-pg-layout" id="css-str">
+		
+		<h2>CSS Structure</h2>
+		<hr class="notop">
+		<p>CSS files used in this template are as follows:</p>
+		<p>1. main.css - This theme is a mobile-first, responsive design, hence this file contains mobile, tablet and desktop css codes. </p>
+		
+	</article>
+	<!-- DEMO CONTENT CLOSE -->
+	
+	<!-- DEMO CONTENT OPEN -->
+	<article class="index-pg-layout" id="icon-usage">
+		
+		<h2>Icon Usage</h2>
+		<hr class="notop">
+		<p>
+			Fontawesome Icon Font and Bootstrap glyphicons icon used in this template. Hence the size and color of the icons can be controlled through css.</p>
+			<pre class="prettyprint linenums">
+				&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+				&lt;i class=&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+			</pre>
+			<p>	View Full List <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
+		
+		
+	</article>
+	<!-- DEMO CONTENT CLOSE -->
+	
+	<!-- DEMO CONTENT OPEN -->
+	<article class="index-pg-layout" id="font-usage">
+		
+		<h2>Font Usage</h2>
+		<hr class="notop">
+		
+			<ul>	<li><b>Roboto - </b>Main body font</li>
+			<li><b>Great Vibes- </b>for headings and small text</li>
+			<li><b>Lato - </b>for small text</li>
+			<li><b>Gobold - </b>for headings</li>			
+			<li><b>Fontawesome - </b> for icons around.</li>
+		</ul>
+		<p>Get Google font from here <a href="http://www.google.com/fonts/">google fonts</a>. </p>
+		
+		
+	</article>
+	<!-- DEMO CONTENT CLOSE -->
+	
+	<!-- DEMO CONTENT OPEN -->
+	<article class="index-pg-layout" id="java">
+		
+		<h2>Javascript</h2>
+		<hr class="notop">
+		<ul>
+			<li><b>main.js - </b> Contents javascripts code to initialize other js plugins present in vendor.js.</li>
+			<li><b>vendor.js - </b>It is collection of all third party libraries. Included Web font loader, jQuery,  bootstrap, owl carousel, isotope, parsleyjs,  waypoints js, stellar js.
+			</li>
+			<li><b>modernizr.js - </b> for details <a href="http://modernizr.com/docs/">modenizr</a>.</li>
+		</ul>
+		
+	</article>
+	<!-- DEMO CONTENT CLOSE -->
+	
+	<!-- DEMO CONTENT OPEN -->
+	<article class="index-pg-layout" id="source">
+		
+		<h2>Sources & Credits</h2>
+		<hr class="notop">
+		<p>The images included in the templates are for demonstration purposes only. They are available at <br><br>
+			<br>
+			<ol>
+				<li>http://www.istockphoto.com/photo/food-ingredients-on-the-rustic-table-18462651?st=08d43c8</li>
+				<li>https://www.flickr.com/photos/108471048@N06/10829081163/in/photolist-huVSxV-9KgmN5-oG5MZw-q6DNwe-bbnUw4-bQ9nxn-5Yxoew-a6CguJ-bfTuiX-67FCSe-sj3qVB-o7Ej4i-es85mh-6ZADJF-a6zqBM-atW3ki-5BL3T5-egf9kx-9hk34G-9hgSqn-9hgSSK-9hk3sb-2F8tqS-dkuM8k-eao5kQ-58yHM8-gNyfzC-gNy7WQ-gNyg1h-oEpVBj-5y1sBH-kPokKX-fayUGW-e71U8y-5zZx26-oFmC4g-hYkk7E-rHAGcz-9wLzRj-gNy7v9-jiVFPJ-5egJpf-qnttee-dmnE2Q-mWSwrb-9Huz4s-nF3ff9-fyTfrF-ndJpKB-7224SG  </li>
+				<li>https://www.flickr.com/photos/58739058@N07/9648462264/in/photolist-fGATFE-dYHS9Y-pBEW5S-dr4rsX-5n7Mc6-5jihdP-iwgCo-pG4uy2-9i1dWp-5CURaW-hFLv-5XTDZF-5nVeLY-6EYkcf-fo7u8z-cHHM1L-gQniJy-aENYcB-2qsjuG-5rbEYE-7Nrjsw-ns6jKH-7yySFp-nVRF4M-azvuDU-aojJxk-6LWPMi-dQynmD-7TR2ca-dYDoNK-8DTRNq-ehQfes-7EXHDU-gzLrY3-aiMa7j-6QXR62-bVsnSX-oXy56w-aZFZjp-anCgbA-7gn8Gw-pMxZyY-86sMPX-6sJ8xA-dJLBkc-gQv45r-r6Mxyx-7uMoNx-aHHo9X-hiS7f </li>
+				<li>https://www.flickr.com/photos/96943885@N02/16069022524/in/photolist-qtXWyu-9RPYVs-gyGBdt-84ohbJ-8gtwoM-jHfAEP-m8Bfey-4UqwBx-5phtnG-bgxSac-6pyNiu-6s83UU-ahJ5kr-bYxNqA-5YJGdr-5fJcYS-jGvKbR-6fqKhi-oyatu2-9JZDNj-nGm8rB-rbCYnH-8DbV21-fu5dzY-dymrqT-aoWrYJ-6RPtmQ-6RPtaU-eNVjEc-6phRJM-8mQ43T-d8kgV1-ryGxyD-f1RhTg-dkuM8k-9c535N-66p9EA-h8FFMR-8y16X1-599tCs-et3Tvu-fajFBk-9ydB7a-dWtMcT-gVUv5X-aauCcF-nGL9xm-b8ARHP-rDkYRS-akHmPv</li>
+				<li>https://www.flickr.com/photos/62382074@N06/8376313327/in/photolist-dLbN8i-cRwvYQ-pu4JDb-4MUXkR-7orjKp-kN8HZT-8N5MjJ-cwfCB-dmFJC8-4GQj51-fQYECh-jgS1W1-fGATFE-dYHS9Y-pBEW5S-dr4rsX-5n7Mc6-5jihdP-iwgCo-pG4uy2-9i1dWp-5CURaW-hFLv-5XTDZF-5nVeLY-6EYkcf-fo7u8z-cHHM1L-gQniJy-aENYcB-2qsjuG-5rbEYE-7Nrjsw-ns6jKH-7yySFp-nVRF4M-azvuDU-aojJxk-6LWPMi-dQynmD-7TR2ca-dYDoNK-8DTRNq-ehQfes-pMxZyY-7EXHDU-gzLrY3-aiMa7j-6QXR62-bVsnSX</li>
+				<li>http://photodune.net/item/farmer/6366436</li>
+				<li>http://photodune.net/item/sunflower-oil-and-seeds-in-bag-on-white/10288639 </li>
+				<li>http://photodune.net/item/man/9493788</li>
+				<li>http://photodune.net/item/man/10730115</li>
+				<li>http://photodune.net/item/happy-man/5623151</li>
+				<li>https://www.flickr.com/photos/c_shen/8537659628/sizes/l</li>
+				<li>https://www.flickr.com/photos/42957889@N05/7554611646/in/photolist-cvzmQW-9jNuBx-oEDU2g-np5i4p-oUiXGQ-9XKCj8-q7hSET-8b8aA1-ovshRb-rTyTX4-oPC8BK-88rEga-fkWyor-avUL6q-kZoLTK-81MB1u-ateMvd-8ndwCh-3TBE69-9GgwjC-5hnSNJ-9b12mJ-79fAMJ-2rzAAv-atcb8p-jAhyi1-4nPgYq-6niWps-mHzy6e-81p61t-em5xxP-dR6neF-ahZ4D2-9S6XvZ-4XbiDJ-cwwtSG-cpGdM-2rzc96-2rDtyL-jDwyVE-5Dyezx-dcYZWa-6JgbUd-dUi1Uc-81MAFf-96Wwbs-dgow3n-o5tu43-ev7vKE-87JEQH</li>
+				<li>https://www.flickr.com/photos/78982375@N04/8440082254/sizes/l</li>
+				<li>http://photodune.net/item/vegetables/1663292</li>
+				<li>http://photodune.net/item/vegetables-on-wooden-table/10609005</li>
+				<li>http://photodune.net/item/fresh-vegetables-on-wooden-plate/10096383</li>
+				<li>https://www.flickr.com/photos/58739058@N07/8159864615/in/photolist-dr4rsX-5n7Mc6-5jihdP-iwgCo-pG4uy2-hFLv-5XTDZF-6EYkcf-cHHM1L-gQniJy-2qsjuG-5rbEYE-7Nrjsw-ns6jKH-7yySFp-nVRF4M-azvuDU-s4XEQG-aojJxk-dQynmD-tYCsRs-7TR2ca-8DTRNq-ehQfes-pMxZyY-7EXHDU-gzLrY3-6QXR62-bVsnSX-aZFZjp-7orjKp-cwfCB-fGATFE-5CURaW-5nVeLY-fo7u8z-aENYcB-6LWPMi-dYDoNK-aiMa7j-oXy56w-anCgbA-86sMPX-6sJ8xA-r6Mxyx-aHHo9X-4wMWsK-epFeT9-a1x3d5-oxW4FA</li>
+				<li>https://www.flickr.com/photos/124917243@N02/14089749547/in/photolist-nt4DEk-eCDz1F-hbuf5U-at45cM-bEgtWQ-5d3JKT-q7Lrf6-7vy6wQ-3dDMX7-55ysJB-9LeYe2-qKYFrb-ac7vhz-5TXNfY-2QX1iC-e4VYPP-3xLYz1-59eN11-pG7UtT-a3PJLx-da4FQz-ivuf64-jboCXc-9YDGUG-nRo9v9-7KsdGR-3w1g7q-5Jt68D-eVhtj6-2kKoQR-aJ1xVV-8Csx6C-7m6oMS-7FAxw8-beEe7c-8HTZjP-6T6ktb-7czova-9fg91j-6c18k4-3r1Czt-dkyLRC-7zZoum-37GaCu-ec4or1-8rscsi-cDHVto-d1caCY-cYRs6j-9CN5dX</li>
+				<li>https://www.pinterest.com/pin/444237950717615806/</li>
+				<li>https://www.pinterest.com/pin/456341374719669214/</li>
+				<li>https://www.pinterest.com/pin/101119954105544808/</li>
+				<li>http://photodune.net/item/farmer/3215388</li>
+				<li>http://photodune.net/item/farmer/824841</li>
+				<li>http://www.istockphoto.com/photo/strawberry-and-blueberry-17714275?st=6ac6e5b</li>
+				<li>http://photodune.net/item/carrots/2340904</li>
+				<li>http://www.istockphoto.com/photo/farmer-has-care-of-his-wheat-field-14651977?st=c4ff3af</li>
+			</ol>
+			
+			<p>Thank you so much for purchasing this theme!
+			
+			<br>
+			<br>	Regards,
+			<br>
+			0effortthemes Team</p>
+		
+			
+		</article>
+		<!-- DEMO CONTENT CLOSE -->
+	</section>
+	
+</body>
+</html>
